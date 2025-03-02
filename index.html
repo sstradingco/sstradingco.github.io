@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSTrading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .ui.card {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ui.card .content {
+            flex-grow: 1;
+        }
+        .company-header {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .company-subtitle {
+            font-size: 20px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .ui.message {
+            margin-top: 20px;
+            width: 80%;
+            text-align: left;
+        }
+        .icon-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .icon-buttons a {
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .icon-buttons a.linkedin {
+            background-color: #0077b5;
+        }
+        .icon-buttons a.whatsapp {
+            background-color: #25d366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="company-header">Soueidan & Sweidan Trading Co.</div>
+        <div class="company-subtitle">SSTrading</div>
+        
+        <div class="card-container">
+            <div class="ui card">
+                <div class="image">
+                    <img src="SStrading logo website..jpeg" alt="Mohamad Ali Soueidan head shot">
+                </div>
+                <div class="content">
+                    <div class="header">Mohamad Ali Soueidan</div>
+                    <div class="description">
+                        <a class="email" href="mailto:sweidan@umich.edu" target="_blank" data-tooltip="sweidan@umich.edu">
+                            <i class="icon envelope"></i>
+                        </a>
+                        <span data-tooltip="macOS"><i class="apple icon"></i></span>
+                        <span data-tooltip="VS Code"><i class="code icon"></i></span>
+                        <span data-tooltip="Hometown: Dearborn, MI"><i class="map pin icon"></i></span>
+                    </div>
+                    <div class="icon-buttons">
+                        <a href="https://www.linkedin.com/in/mohamad-ali-soueidan/" target="_blank" class="linkedin" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/message/57QJWDLV3LSAF1" target="_blank" class="whatsapp" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui card">
+                <div class="image">
+                    <img src="ms.jpeg" alt="Mahdi Soueidan head shot">
+                </div>
+                <div class="content">
+                    <div class="header">Mahdi Soueidan</div>
+                    <div class="description">
+                        <a class="email" href="#" target="_blank" data-tooltip="Email Placeholder">
+                            <i class="icon envelope"></i>
+                        </a>
+                        <span data-tooltip="Windows User"><i class="windows icon"></i></span>
+                        <span data-tooltip="CompTIA A+ Certified"><i class="certificate icon"></i></span>
+                        <span data-tooltip="Microsoft Certified: Azure Administrator Associate">
+                            <i class="microsoft icon"></i>
+                        </span>
+                    </div>
+                    <div class="icon-buttons">
+                        <a href="https://www.linkedin.com/in/mahdi-soueidan-118a6037/" target="_blank" class="linkedin" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui message">
+            <p><strong>About Us:</strong></p>
+            <p>SSTrading, based in Michigan, USA, is a reputable reseller of computer and IT equipment with over 10 years of experience. We pride ourselves on offering quality products and services to clients worldwide. Feel free to reach out to us via WhatsApp or email for any inquiries.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-tooltip]').popup();
+        });
+    </script>
+</body>
+</html>
